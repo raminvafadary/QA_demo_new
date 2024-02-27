@@ -21,11 +21,11 @@ def initialize_qa_system(pdf_directory):
     docs = text_splitter.split_documents(documents)
 
     # Generate embeddings for document chunks
-    embeddings = CohereEmbeddings(model="multilingual-22-12", cohere_api_key="3DJoDZKyuT3isbrDu4Les4ydIcZ29KnWi5Mpg9kj")
+    embeddings = CohereEmbeddings(model="multilingual-22-12", cohere_api_key="")
     vectorstore_faiss = FAISS.from_documents(docs, embeddings)
 
     # Initialize the language model
-    llm = OpenAI(api_key="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")
+    llm = OpenAI(api_key="")
 
     # Create a custom prompt template
     prompt_template_qa = PromptTemplate(
