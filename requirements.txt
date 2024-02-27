@@ -1,0 +1,9 @@
+streamlit
+boto3
+langchain
+cohere
+python-dotenv
+pypdf
+faiss-cpu
+openai
+tiktoken
